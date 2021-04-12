@@ -108,15 +108,17 @@ const isEvery = books.every(function (book) {
 });
 console.log(isEvery);
 //Array of authors and the book they wrote "--- wrote --- in ---"
-books.forEach((element) =>
+books.forEach((book) =>
   console.log(
     authorFirst + " " + authorLast + " wrote " + name + " in " + publishDate
   )
-);
+); //i tried $ but no
+
 //how many books were written before 1900?
-const nineteen = books.filter(function (book) {
-  if (book.publishDate <= 1900) {
-    return true;
-  }
-});
-console.log[nineteen].reduce((a, b) => a + b, 0);
+
+console.log[
+  books.filter(function (book) {
+    if (book.publishDate <= 1900) {
+    }
+  })
+].reduce((a, b) => a + b, 0);
